@@ -1,0 +1,34 @@
+CREATE TABLE account
+(
+Username varchar(255) NOT NULL,
+Password varchar(255) NOT NULL,
+Name varchar(255),
+Email varchar(255),
+Phone varchar(255),
+City varchar(255),
+Gender varchar(255),
+Day varchar(255),
+Month varchar(255),
+Year varchar(255),
+Technology varchar(255),
+Domain varchar(255),
+Experience varchar(255),
+RegDate date NOT NULL,	
+Flag1 int,
+PRIMARY KEY (Username)
+)
+
+
+int i = st.executeUpdate("insert into account(Username, Password, Name, Email,Phone, City, Gender,Day,Month,Year,Technology,Domain,Experience,RegDate) values('" + Name + "','" + Name + "','" + Name + "','" + Email + "','" + Number + "','" + City + "','" + Gender + "','" + day + "','" + Month + "','" + Year + "','" + c + "','" + Domain + "','" + Experience + "',CURDATE())");
+
+CREATE TABLE question
+(
+File_name varchar(255),
+Time int,
+TtlQno varchar(255),
+PRIMARY KEY (File_name)
+)
+
+
+INSERT INTO question(File_name,Time,TtlQno) VALUES ('JAVA','30',10);
+INSERT INTO question(File_name,Time,TtlQno) VALUES ('JAVASCIPT','40',10);
